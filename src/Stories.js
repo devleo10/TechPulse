@@ -3,6 +3,7 @@ import { useGlobalContext } from "./Context";
 
 const Stories = () => {
   const { hits, isLoading } = useGlobalContext();
+
   if (isLoading) {
     return (
       <>
@@ -10,6 +11,7 @@ const Stories = () => {
       </>
     );
   }
+
   return (
     <>
       <div className="stories-div">
@@ -23,15 +25,23 @@ const Stories = () => {
                 comments
               </p>
               <div className="card-button">
-                <a href={url} target="_blank">
+                <a href={url} target="_blank" rel="noopener noreferrer">
                   Read More
                 </a>
-                
               </div>
             </div>
           );
         })}
-        <p>Made with ❤️ by <a href="https://www.linkedin.com/in/choudhury-mehbub-alam-b6b191219/">DevLeo</a></p>
+        <p>
+          Made with ❤️ by{" "}
+          <a
+            href="https://www.linkedin.com/in/choudhury-mehbub-alam-b6b191219/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DevLeo
+          </a>
+        </p>
       </div>
     </>
   );
