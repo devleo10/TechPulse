@@ -5,18 +5,14 @@ import Pagination from './Pagination';
 
 import './App.css';
 
-
-
 export const App = () => {
 
   return (
      
     <>
-   
     <Search/>
     <Pagination/>
     <Stories/>
-   
     </>
     
   )

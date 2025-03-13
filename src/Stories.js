@@ -23,7 +23,7 @@ const Stories = () => {
                 comments
               </p>
               <div className="card-button">
-                <a href={url} target="_blank">
+                <a href={url} target="_blank" rel="noopener noreferrer">
                   Read More
                 </a>
                 
