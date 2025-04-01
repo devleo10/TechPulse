@@ -21,15 +21,19 @@ const Search = () => {
 			</h1>
 
 			{!showPopularNews && (
-				<form>
-					<div>
-						<label htmlFor="search">Search</label>
+				<form role="search" aria-label="Search articles">
+					<div className="search-container">
+						<label htmlFor="search-input" className="visually-hidden">
+							Search articles
+						</label>
 						<input
 							id="search-input"
-							type="text"
-							placeholder="search here"
+							type="search"
+							placeholder="Search for articles"
 							value={query}
 							onChange={(e) => searchFn(e.target.value)}
+							aria-label="Search articles"
+							autoComplete="off"
 						/>
 					</div>
 				</form>
