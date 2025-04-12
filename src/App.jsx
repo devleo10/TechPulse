@@ -8,6 +8,7 @@ import NotFound from './components/NotFound.jsx';
 import './App.css';
 import ReadingMode from './components/ReadingMode.jsx';
 import { useGlobalContext } from './Context.jsx';
+import BackToTopButton from './BackToTop.jsx';
 
 const Home = lazy(() => import('./pages/Home.jsx'));
 
@@ -77,6 +78,7 @@ export const App = () => {
 
         </ReadingMode>
       </Suspense>
+      <BackToTopButton />
     </Router>
   );
 }
