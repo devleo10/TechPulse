@@ -23,8 +23,11 @@ const Search = () => {
       </h1>
 
       {!showPopularNews &&
-        <form>
-          <div>
+        <form className="search-form">
+          <div className="search-container">
+            <label htmlFor="search-input" className="search-label">
+              Search for articles:
+            </label>
             <input type="text" placeholder="search here"
               value={query}
               onChange={(e) => searchFn(e.target.value)}
